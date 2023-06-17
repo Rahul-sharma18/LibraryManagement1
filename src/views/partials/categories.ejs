@@ -1,0 +1,15 @@
+<section class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="categories__slider owl-carousel">
+                <% for(var i=0; i< categories.length; i++){ %>
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="<%= categories[i].imageUrl %>">
+                        <h5><a href="#"><%= categories[i].title %></a></h5>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>
